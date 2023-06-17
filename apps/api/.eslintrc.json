@@ -1,0 +1,6 @@
+{
+  "root": true,
+  "plugins": ["@typescript-eslint"],
+  "extends": ["custom"], // Tells ESLint to use the "eslint-config-custom" package
+  "rules": {}
+}

@@ -1,0 +1,28 @@
+{
+  "name": "root",
+  "private": true,
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/config/*",
+    "packages/shared/*"
+  ],
+  "dependencies": {
+    "prettier": "^2.8.8"
+  },
+  "devDependencies": {
+    "lerna": "^7.0.2",
+    "turborepo": "^0.0.1"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "turbo run format",
+    "prettier:check": "yarn prettier --check .",
+    "prettier:write": "yarn prettier --write ."
+  },
+  "engines": {
+    "node": ">=20.3.0"
+  },
+  "packageManager": "yarn@1.22.18"
+}
