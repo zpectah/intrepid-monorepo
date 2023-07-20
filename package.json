@@ -4,10 +4,11 @@
   "version": "1.0.0",
   "workspaces": [
     "apps/*",
-    "packages/config/*",
-    "packages/shared/*"
+    "packages/*"
   ],
   "dependencies": {
+    "dotenv": "^16.3.1",
+    "dotenv-cli": "^7.2.1",
     "prettier": "^2.8.8"
   },
   "devDependencies": {
@@ -18,6 +19,7 @@
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "turbo run format",
+    "build": "lerna run build",
     "prettier:check": "yarn prettier --check .",
     "prettier:write": "yarn prettier --write ."
   },
